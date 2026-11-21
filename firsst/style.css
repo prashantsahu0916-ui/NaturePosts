@@ -14,11 +14,14 @@ body {
 .main {
   padding: 20px;
   background: linear-gradient(rgb(64, 4, 64), rgb(8, 8, 54));
-  height: 100%;
+  height: 50%;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   gap: 10px;
+  overflow: auto;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 .card {
   overflow: hidden;
@@ -26,6 +29,7 @@ body {
   width: 350px;
   border-radius: 10px;
   position: relative;
+  flex-shrink: 0;
 }
 .card img {
   object-fit: cover;
@@ -55,4 +59,24 @@ h1 {
   text-align: center;
   color: rgb(8, 42, 8);
   font-weight: 200px;
+}
+#name {
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(rgb(8, 8, 54), rgb(64, 4, 64));
+}
+#name h1 {
+  font-size: 250px;
+  text-align: center;
+  background: url(https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#name p {
+  text-align: center;
+  font-size: 100px;
+  background: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTg0dDc5bzN6cTlnYmcwaTcyaWJ5dGZrbWU2am5lMDIxcWNmdWVlMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QIkavkylBv0Z2/giphy.gif);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 2px black;
 }
